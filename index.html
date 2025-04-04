@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Advanced</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tic Tac Toe <span class="tag">Advanced</span></h1>
+        <p class="subtitle">Configure the game</p>
+
+        <div class="notice">
+            <h2>Notice</h2>
+            <p>
+                As the title says, "Tic Tac Toe <b>Advanced</b>", this game is...
+                well... not really advanced. Originally planned to have 4 difficulty levels,
+                but only 2 (Dummy AI and 2-Players mode) are implemented.
+            </p>
+            <p>More levels will be added soon. Thanks for understanding!</p>
+            <button onclick="closeNotice()">OK</button>
+        </div>
+
+        <div class="mode-selection">
+            <button onclick="startGame('ai')">One Player Mode</button>
+            <button onclick="startGame('two')">Two Players Mode</button>
+        </div>
+
+        <div class="game-board hidden">
+            <button class="back-btn" onclick="goBack()">← Back</button>
+            <div class="grid">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <p id="status"></p>
+            <button onclick="resetGame()">Restart</button>
+        </div>
+
+        <p class="footer">Created by Devriz.</p>
+    </div>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
